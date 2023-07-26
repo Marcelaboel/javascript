@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivendo em que País?</title>
+</head>
+<body>
+   <h1>Sistema de Verificação</h1> 
+   De que País Você é? <input type="text" name="txtbr" id="txtbr">
+   <input type="button" value="Verificar" onclick="texto()">
+   <div id="res">
+
+   </div>
+   <script>
+    function texto() {
+     var txtbr = window.document.querySelector('input#txtbr')
+     var res = window.document.querySelector('div#res')
+     var país = `Brasil`
+    
+     res.innerHTML = `<p> Vivendo em <strong> ${país}</strong></p>`
+     if (país == `Brasil`) {
+     res.innerHTML = `<p> Você é do <strong> Brasil?</strong>?</p>`
+     res.innerHTML = `<p> <strong> Estrangeiro! </strong></p>`
+     
+     
+    }
+   </script>
+</body>
+</html>
